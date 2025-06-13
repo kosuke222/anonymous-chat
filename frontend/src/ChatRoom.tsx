@@ -14,7 +14,7 @@ interface Message {
   replyToMessageId?: string; // どのメッセージへのリプライか
   replyToMessageContent?: string; // リプライ元のメッセージ内容 (表示用)
   replyToUsername?: string; // リプライ元のユーザー名 (表示用)
-}
+} 
 
 const BACKEND_API_URL = 'http://localhost:3000'; // バックエンドAPIのURL
 
