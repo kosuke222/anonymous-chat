@@ -2,7 +2,7 @@
 import { io } from 'socket.io-client';
 
 // バックエンドが動いているURLを指定。通常はlocalhost:3000
-const SOCKET_URL = 'http://localhost:3000';
+const SOCKET_URL = 'https://anonymous-chat-backend-ao0t.onrender.com';
 
 const socket = io(SOCKET_URL, {
     transports: ['websocket'],
