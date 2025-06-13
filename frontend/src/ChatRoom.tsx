@@ -16,7 +16,7 @@ interface Message {
   replyToUsername?: string; // リプライ元のユーザー名 (表示用)
 } 
 
-const BACKEND_API_URL = 'http://localhost:3000'; // バックエンドAPIのURL
+const BACKEND_API_URL = 'https://anonymous-chat-backend-ao0t.onrender.com/'; // バックエンドAPIのURL
 
 const ChatRoom: React.FC = () => {
   const [roomId, setRoomId] = useState('');
@@ -59,7 +59,7 @@ const ChatRoom: React.FC = () => {
 
     // メッセージ履歴の取得
     console.log(`--- ChatRoom: メッセージ履歴を ${BACKEND_API_URL}/api/messages/${roomId} から取得します。---`);
-    fetch(`${BACKEND_API_URL}/api/messages/${roomId}`)
+    fetch(`${BACKEND_API_URL}api/messages/${roomId}`)
       .then(response => {
         console.log('--- ChatRoom: メッセージ履歴Fetchのレスポンスを受信しました。Status:', response.status);
         if (!response.ok) {
